@@ -126,16 +126,6 @@ System Prompt 或
 
 [`.github/workflows/ci.yml`](.github/workflows/ci.yml) 正是本 Skill 的输出物：最小权限、并发控制、SHA-1 锁定、缓存优化，一条不落。
 
-## 📢 推广文章 / Articles
-
-| 平台 | 链接 | 状态 |
-|------|------|------|
-| Dev.to | [I Built an AI Skill That Writes GitHub Actions...](https://dev.to/2b0748/i-built-an-ai-skill-that-writes-github-actions-workflows-with-zero-config-errors-2mh1) | ✅ 已发布 |
-| 掘金 | [我写了一个 AI Skill，让任何 AI 编程助手都能帮你写 GitHub Actions](https://juejin.cn/post/7665601892052451368) | ✅ 已发布 |
-| V2EX | 待发布 → 填入链接 | 🔗 |
-
----
-
 ## 许可 / License
 
 MIT
