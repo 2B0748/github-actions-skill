@@ -7,51 +7,49 @@
 [![Last Commit](https://img.shields.io/github/last-commit/2B0748/github-actions-skill?style=flat-square)](https://github.com/2B0748/github-actions-skill/commits/main)
 [![Platforms](https://img.shields.io/badge/Platform-Claude%20Code%20|%20Cursor%20|%20Copilot%20|%20Windsurf-6e40c9?style=flat-square)](PROMPT.md)
 
-> 🤖 AI 驱动的 GitHub Actions 工作流生成、审查与优化 —— 全平台通用
->
-> 🤖 AI-powered GitHub Actions workflow generation, review & optimization — universal for all AI agents
+> AI-powered GitHub Actions workflow generation, review & optimization — universal for all AI agents
 
 </div>
 
 ---
 
-## 决策引擎 / Decision Engine
+## Decision Engine
 
 ```mermaid
 graph TD
-    REQ[👤 User Request / 用户请求] --> DET{Keyword Match / 关键词匹配}
-    
-    DET -->|PR / push / lint / test| A[🔧 CI Workflow / CI 工作流]
-    DET -->|Tag / Release / publish| B[📦 Release Workflow / 发布工作流]
-    DET -->|cron / scheduled / deps| C[⏰ Scheduled Workflow / 定时工作流]
-    DET -->|security / scan / CodeQL| D[🛡️ Security Workflow / 安全工作流]
-    DET -->|Issue / PR / label| E[🤖 Automation Workflow / 自动化工作流]
-    
-    A --> INJECT{Mandatory Injection / 必含配置注入}
+    REQ[User Request] --> DET{Keyword Match}
+
+    DET -->|PR / push / lint / test| A[CI Workflow]
+    DET -->|Tag / Release / publish| B[Release Workflow]
+    DET -->|cron / scheduled / deps| C[Scheduled Workflow]
+    DET -->|security / scan / CodeQL| D[Security Workflow]
+    DET -->|Issue / PR / label| E[Automation Workflow]
+
+    A --> INJECT{Mandatory Injection}
     B --> INJECT
     C --> INJECT
     D --> INJECT
     E --> INJECT
-    
-    INJECT --> PERM[🔒 Least-Privilege permissions / permissions 最小权限]
-    INJECT --> CONC[⚡ concurrency Control / concurrency 并发控制]
-    INJECT --> PIN[📌 SHA-1 Version Pinning / SHA-1 版本锁定]
-    
-    PERM & CONC & PIN --> CACHE{Language Detect & Cache / 语言识别 & 缓存匹配}
+
+    INJECT --> PERM[Least-Privilege permissions]
+    INJECT --> CONC[Concurrency Control]
+    INJECT --> PIN[SHA-1 Version Pinning]
+
+    PERM & CONC & PIN --> CACHE{Language Detect & Cache}
     CACHE --> NODE[npm/pnpm cache]
     CACHE --> PY[pip cache]
     CACHE --> GO[Go cache]
     CACHE --> RUST[target/ cache]
-    
-    NODE & PY & GO & RUST --> AUDIT[🔍 12 Quality Gates / 12道质量关卡]
-    AUDIT --> OUT[✅ Production-Grade YAML / 生产级 YAML]
-    
+
+    NODE & PY & GO & RUST --> AUDIT[12 Quality Gates]
+    AUDIT --> OUT[Production-Grade YAML]
+
     style OUT fill:#2da44e,color:#fff
     style DET fill:#6e40c9,color:#fff
     style INJECT fill:#d73a49,color:#fff
 ```
 
-## 全平台支持 / Universal
+## Universal Platform Support
 
 <table>
 <tr>
@@ -90,46 +88,42 @@ cp PROMPT.md \
 </td>
 <td>
 
-For English: use `PROMPT.en.md`<br>
-中文：粘贴 `PROMPT.md` 到
-System Prompt 或
-自定义指令
+Use `PROMPT.en.md` for English<br>
+or paste `PROMPT.md` into
+System Prompt or
+Custom Instructions
 
 </td>
 </tr>
 </table>
 
-## 能力矩阵 / Capabilities
+## Capabilities
 
-| 能力 | 说明 |
-|------|------|
-| 🔧 **CI 生成** | Lint → Test → Build 完整流水线，自动检测语言生态 |
-| 📦 **自动发布** | Tag 触发自动构建、打包、生成 Release |
-| 🛡️ **安全审查** | permissions 最小化、SHA-1 锁定、密钥泄露扫描 |
-| ⚡ **性能优化** | 缓存策略匹配、并行 Job 拆分、Runner 选型建议 |
-| 📋 **强制执行** | 3 项必含配置（permissions / concurrency / 版本锁定）12 道质量关卡 |
-| 🌐 **多语言** | Node.js / Python / Go / Rust / Docker 缓存策略全覆盖 |
+| Capability | Description |
+|------------|-------------|
+| **CI Generation** | Full Lint -> Test -> Build pipeline with automatic language ecosystem detection |
+| **Auto Release** | Tag-triggered auto build, packaging, and Release generation |
+| **Security Review** | Least-privilege permissions, SHA-1 pinning, secret leak scanning |
+| **Performance Optimization** | Cache strategy matching, parallel job splitting, runner selection advice |
+| **Mandatory Enforcement** | 3 mandatory configs (permissions / concurrency / version pinning) + 12 quality gates |
+| **Multi-language** | Node.js / Python / Go / Rust / Docker cache strategies fully covered |
 
-## 文件结构 / Files
+## Files
 
-| 文件 | 语言 | 说明 |
-|------|------|------|
-| [`SKILL.md`](SKILL.md) | 🇨🇳 中文 | Claude Code 格式（含 YAML 元数据） |
-| [`PROMPT.md`](PROMPT.md) | 🇨🇳 中文 | 通用版（Cursor / Copilot / Windsurf 等） |
-| [`PROMPT.en.md`](PROMPT.en.md) | 🇺🇸 English | Universal (Cursor / Copilot / Windsurf / all agents) |
-| [`examples/`](examples/) | 🌐 YAML | 5 个真实语言/场景生成示例 |
-| [`CONTRIBUTING.md`](CONTRIBUTING.md) | 🇨🇳 中文 | 贡献指南 |
+| File | Language | Description |
+|------|----------|-------------|
+| [`SKILL.md`](SKILL.md) | Chinese | Claude Code format (with YAML metadata) |
+| [`PROMPT.md`](PROMPT.md) | Chinese | Universal edition (Cursor / Copilot / Windsurf, etc.) |
+| [`PROMPT.en.md`](PROMPT.en.md) | English | Universal (Cursor / Copilot / Windsurf / all agents) |
+| [`examples/`](examples/) | YAML | 5 real-world language/scenario generation examples |
+| [`CONTRIBUTING.md`](CONTRIBUTING.md) | English | Contributing guide |
 
-## 自举 / Dogfooding
+## Dogfooding
 
-> 本仓库自己吃自己的狗粮 —— 用本 Skill 生成了自己的 CI 👇
->
-> This repo eats its own dog food — our own CI below was generated by this Skill 👇
-
-[`.github/workflows/ci.yml`](.github/workflows/ci.yml) 正是本 Skill 的输出物：最小权限、并发控制、SHA-1 锁定、缓存优化，一条不落。
+> This repo eats its own dog food — our own CI below was generated by this Skill
 
 [`.github/workflows/ci.yml`](.github/workflows/ci.yml) is a direct output of this Skill: least privilege, concurrency control, SHA-1 pinning, cache optimization — nothing missed.
 
-## 许可 / License
+## License
 
 MIT

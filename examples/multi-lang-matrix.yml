@@ -1,6 +1,6 @@
-# 示例 5：多语言矩阵构建 / Example 5: Multi-language Matrix Build
-# 场景：Rust 后端 + Node.js 前端 的 monorepo / Scenario: Rust backend + Node.js frontend monorepo
-# 特点：策略矩阵、不同 working-directory、独立缓存 / Features: strategy matrix, different working-directory, independent caches
+# Example 5: Multi-language Matrix Build
+# Scenario: Rust backend + Node.js frontend monorepo
+# Features: strategy matrix, different working-directory, independent caches
 name: CI
 
 on:

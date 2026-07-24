@@ -1,5 +1,5 @@
-# 示例 3：Go 项目 CI / Example 3: Go CI
-# 触发：PR + Push，语言：Go，包含：lint + test + 缓存 + 竞态检测 / Trigger: PR + Push, Language: Go, Includes: lint + test + cache + race detection
+# Example 3: Go CI
+# Trigger: PR + Push, Language: Go, Includes: lint + test + cache + race detection
 name: CI
 
 on:
