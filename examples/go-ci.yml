@@ -1,0 +1,40 @@
+# 示例 3：Go 项目 CI
+# 触发：PR + Push，语言：Go，包含：lint + test + 缓存 + 竞态检测
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/setup-go@f111f3307d0b742ced09873d3f9d098c6411e2b2 # v5.4.0
+        with:
+          go-version: '1.23'
+          cache: true
+      - uses: golangci/golangci-lint-action@55c2c1448f86bc01ea8607f2d5f8a3b3ee01d43e # v6.5.0
+        with:
+          version: latest
+
+  test:
+    needs: lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/setup-go@f111f3307d0b742ced09873d3f9d098c6411e2b2 # v5.4.0
+        with:
+          go-version: '1.23'
+          cache: true
+      - run: go test -race -coverprofile=coverage.out ./...
