@@ -118,7 +118,6 @@ Custom Instructions
 | [`SKILL.cn.md`](SKILL.cn.md) | 中文 | Claude Code 格式（含 YAML 元数据） |
 | [`PROMPT.md`](PROMPT.md) | English | Universal edition (Cursor / Copilot / Windsurf, etc.) |
 | [`PROMPT.cn.md`](PROMPT.cn.md) | 中文 | 通用版（Cursor / Copilot / Windsurf 等） |
-| [`PROMPT.en.md`](PROMPT.en.md) | English | Universal (Cursor / Copilot / Windsurf / all agents) |
 | [`examples/`](examples/) | YAML | 5 real-world language/scenario generation examples |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | English | Contributing guide |
 
