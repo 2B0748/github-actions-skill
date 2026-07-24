@@ -1,5 +1,5 @@
-# 示例 4：自动化 Release
-# 触发：Tag v*，功能：自动构建 + GitHub Release + Artifact 上传
+# 示例 4：自动化 Release / Example 4: Automated Release
+# 触发：Tag v*，功能：自动构建 + GitHub Release + Artifact 上传 / Trigger: Tag v*, Features: auto build + GitHub Release + artifact upload
 name: Release
 
 on:
@@ -15,12 +15,12 @@ jobs:
     runs-on: ubuntu-latest
     concurrency:
       group: release-${{ github.ref }}
-      cancel-in-progress: false  # Release 绝不允许被取消
+      cancel-in-progress: false  # Release 绝不允许被取消 / Release must never be cancelled
 
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
-      # 根据项目类型替换构建步骤
+      # 根据项目类型替换构建步骤 / Replace with your build command based on project type
       - name: Build
         run: echo "Replace with your build command"
 

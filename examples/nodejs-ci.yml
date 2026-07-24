@@ -1,5 +1,5 @@
-# 示例 1：Node.js 项目 CI
-# 触发：PR + Push，语言：Node.js (npm)，包含：lint + test + 缓存
+# 示例 1：Node.js 项目 CI / Example 1: Node.js CI
+# 触发：PR + Push，语言：Node.js (npm)，包含：lint + test + 缓存 / Trigger: PR + Push, Language: Node.js (npm), Includes: lint + test + cache
 name: CI
 
 on:

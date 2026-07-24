@@ -1,5 +1,5 @@
-# 示例 2：Python 项目 CI
-# 触发：PR + Push，语言：Python，包含：lint + test + 缓存
+# 示例 2：Python 项目 CI / Example 2: Python CI
+# 触发：PR + Push，语言：Python，包含：lint + test + 缓存 / Trigger: PR + Push, Language: Python, Includes: lint + test + cache
 name: CI
 
 on:
