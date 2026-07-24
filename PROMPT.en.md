@@ -47,7 +47,7 @@ User Request
 
 ### 3.1 Skeleton Generation Phase
 
-**Execute in order — do NOT skip any step:**
+**Execute in order — do NOT skip any steps:**
 
 1. **Confirm runtime environment.** Ask for the project language/framework (Node.js/Python/Go/Rust/Docker). If not provided, infer from repo files (check for `package.json`, `go.mod`, `Cargo.toml`, etc.).
 2. **Confirm trigger events.** Determine `on:` configuration based on the decision tree.
@@ -378,7 +378,7 @@ jobs:
 □ 4. Cache config matches project language/package manager
 □ 5. on: trigger events match user request scenario
 □ 6. No hardcoded API keys, tokens, or passwords
-□ 7. runs-on defaults to ubuntu-latest (unless specifially requested otherwise)
+□ 7. runs-on defaults to ubuntu-latest (unless specifically requested otherwise)
 ```
 
 ### Runtime Validation (copy-paste ready)
