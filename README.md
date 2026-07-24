@@ -7,7 +7,9 @@
 [![Last Commit](https://img.shields.io/github/last-commit/2B0748/github-actions-skill?style=flat-square)](https://github.com/2B0748/github-actions-skill/commits/main)
 [![Platforms](https://img.shields.io/badge/Platform-Claude%20Code%20|%20Cursor%20|%20Copilot%20|%20Windsurf-6e40c9?style=flat-square)](PROMPT.md)
 
-> AI-powered GitHub Actions workflow generation, review & optimization — universal for all AI agents
+> 🤖 AI 驱动的 GitHub Actions 工作流生成、审查与优化 —— 全平台通用
+>
+> 🤖 AI-powered GitHub Actions workflow generation, review & optimization — universal for all AI agents
 
 </div>
 
@@ -112,8 +114,10 @@ Custom Instructions
 
 | File | Language | Description |
 |------|----------|-------------|
-| [`SKILL.md`](SKILL.md) | Chinese | Claude Code format (with YAML metadata) |
-| [`PROMPT.md`](PROMPT.md) | Chinese | Universal edition (Cursor / Copilot / Windsurf, etc.) |
+| [`SKILL.md`](SKILL.md) | English | Claude Code format (with YAML metadata) |
+| [`SKILL.cn.md`](SKILL.cn.md) | 中文 | Claude Code 格式（含 YAML 元数据） |
+| [`PROMPT.md`](PROMPT.md) | English | Universal edition (Cursor / Copilot / Windsurf, etc.) |
+| [`PROMPT.cn.md`](PROMPT.cn.md) | 中文 | 通用版（Cursor / Copilot / Windsurf 等） |
 | [`PROMPT.en.md`](PROMPT.en.md) | English | Universal (Cursor / Copilot / Windsurf / all agents) |
 | [`examples/`](examples/) | YAML | 5 real-world language/scenario generation examples |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | English | Contributing guide |
