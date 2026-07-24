@@ -126,6 +126,24 @@ System Prompt 或
 
 [`.github/workflows/ci.yml`](.github/workflows/ci.yml) 正是本 Skill 的输出物：最小权限、并发控制、SHA-1 锁定、缓存优化，一条不落。
 
+## 📢 推广文章 / Articles
+
+> 发布后将链接填入此处，驱动社区流量到仓库。
+
+| 平台 | 文章 | 状态 |
+|------|------|------|
+| 掘金 | [article-juejin.md](article-juejin.md) | 🔗 待发布 → 填入链接 |
+| Dev.to | [article-devto.md](article-devto.md) | 🔗 待发布 → 填入链接 |
+| V2EX | 摘录 + GitHub 链接 | 🔗 待发布 → 填入链接 |
+
+发布后替换为：
+```markdown
+| 掘金 | [标题](https://juejin.cn/post/xxx) | ✅ 已发布 |
+| Dev.to | [标题](https://dev.to/xxx) | ✅ 已发布 |
+```
+
+---
+
 ## 许可 / License
 
 MIT
