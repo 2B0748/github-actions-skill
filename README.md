@@ -131,7 +131,7 @@ System Prompt 或
 | 平台 | 链接 | 状态 |
 |------|------|------|
 | Dev.to | [I Built an AI Skill That Writes GitHub Actions...](https://dev.to/2b0748/i-built-an-ai-skill-that-writes-github-actions-workflows-with-zero-config-errors-2mh1) | ✅ 已发布 |
-| 掘金 | 待发布 → 填入链接 | 🔗 |
+| 掘金 | [我写了一个 AI Skill，让任何 AI 编程助手都能帮你写 GitHub Actions](https://juejin.cn/post/7665601892052451368) | ✅ 已发布 |
 | V2EX | 待发布 → 填入链接 | 🔗 |
 
 ---
